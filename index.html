@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form name="createColor" action="" method="get">
+        <legend>Create new color</legend>
+        <div class="wrap">
+            
+            <label for="">Color:
+                <span id="colorNameError" class="error"></span>
+            </label>
+            
+            <input type="text" id="colorInput" name="color">
+            
+        </div>
+        <div class="wrap">
+            <label for="">Type:</label>
+            <select name="type" id="typeSelect">
+                <option value="RGB">RGB</option>
+                <option value="RGBA">RGBA</option>
+                <option value="HEX">HEX</option>
+            </select>
+        </div>
+        <div class="wrap">
+            <label for="">Code:
+                <span id="colorCodeError" class="error"></span>
+            </label>
+            <input type="text" name="code" id="codeInput">
+        </div>
+        <input type="submit" id="btnSave" value="Save">
+    </form>
+
+    <div id="allColors">
+        <legend>All colors</legend>
+        <div id="colorsCollect">
+
+        </div>
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
